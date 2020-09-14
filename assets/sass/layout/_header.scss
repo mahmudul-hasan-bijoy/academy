@@ -1,0 +1,42 @@
+.header {
+	padding: 2rem 0;
+	background-color: rgba(0,0,0,.02);
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left {
+		// display: flex;
+	}
+
+	&__right {
+		// display: flex;
+	}
+
+	&__link {
+		color: $green;
+		&:hover {
+			color: $green-dark;
+		}
+		&:not(:last-child) {
+			margin-right: 4rem;
+		}
+	}
+
+	&__block {
+		color: $white;
+		padding: 1.2rem 2.5rem;
+		background-color: $green;
+		&:hover {
+			color: $white;
+			background-color: $green-dark;
+		}
+	}
+
+	&__icon {
+		margin-right: .5rem;
+	}
+
+}

@@ -29,7 +29,14 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
+
+a,
+a:hover {
+  transition: .3s all;
+  text-decoration: none;
+}
 
 *,
 *::after,
@@ -39,19 +46,32 @@ time, mark, audio, video {
 html {
   font-size: 62.5%;
   /* making default unit to 10px = 1rem */ }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 80%; } }
+  // @include respond(tab-land) {
+  //   html {
+  //     font-size: 56.25%; } }
+  // @include respond(tab-port) {
+  //   html {
+  //     font-size: 50%; } }
+  // @include respond(big-desktop) {
+  //   html {
+  //     font-size: 100%; } }
 
 body {
-  // font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
   font-size: 1.6rem;
+  @include respond(big-desktop) {
+    font-size: 1.8rem;
+  }
+  @include respond(tab-land) {
+    font-size: 1.5rem;
+  }
+  @include respond(tab-port) {
+    font-size: 1.4rem;
+  }
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+
   box-sizing: border-box;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;

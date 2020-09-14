@@ -1,0 +1,62 @@
+.nav {
+	padding: 2rem 0;
+	&__logo {
+
+	}
+	&__menu {
+
+	}
+	&__items {
+
+	}
+	&__list {
+		&:not(:first-child) {
+			margin-left: 2rem;
+		}
+		& .dropdown-toggle::after {
+			display: none;
+		}
+		& .fas {
+			font-size: 1.2rem;
+			transition: .5s all;
+		}
+		& .dropdown-menu {
+			border: none;
+			padding: 0;
+			border-top: 2px solid $green;
+			box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.18);
+			border-radius: 0;
+			background-color: $white;
+		}
+		& .dropdown-item {
+			text-align: left;
+			font-size: 1.4rem;
+			padding: 1rem;
+			padding-right: 7rem;
+		}
+	}
+	&__links {
+		font-family: Noto;
+		font-size: 1.8rem;
+		letter-spacing: 1.5px;
+		color: $black;
+		&:hover,
+		&:hover .fas {
+			transform: rotate(180deg);
+			color: $green;
+		}
+	}
+
+	&__id {
+
+	}
+	&__block {
+		color: $white;
+		padding: 1rem 1.2rem;
+		background-color: $green;
+		&:hover {
+			color: $white;
+			background-color: $green-dark;
+		}
+	}
+}
