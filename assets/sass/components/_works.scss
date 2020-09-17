@@ -1,0 +1,31 @@
+.works {
+	color: $grey;
+	&__column {
+		margin: 4rem 0;
+		position: relative;
+		padding: 4rem 2rem;
+		border: 1px solid $grey-light;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@include respond (tab-port) {
+			padding: 4rem .5rem;
+		}
+	}
+	&__icon {
+		position: absolute;
+		top: -5rem;
+		padding: 2.5rem 2rem;
+		font-size: 3rem;
+		background: $green;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 80%, 50% 100%, 0 80%);
+	}
+	&__title {
+		color: $black;
+	}
+}

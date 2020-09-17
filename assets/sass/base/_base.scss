@@ -32,12 +32,6 @@ time, mark, audio, video {
   padding: 0;
   list-style: none; }
 
-a,
-a:hover {
-  transition: .3s all;
-  text-decoration: none;
-}
-
 *,
 *::after,
 *::before {
@@ -45,17 +39,7 @@ a:hover {
 
 html {
   font-size: 62.5%;
-  /* making default unit to 10px = 1rem */ }
-  // @include respond(tab-land) {
-  //   html {
-  //     font-size: 56.25%; } }
-  // @include respond(tab-port) {
-  //   html {
-  //     font-size: 50%; } }
-  // @include respond(big-desktop) {
-  //   html {
-  //     font-size: 100%; } }
-
+}
 body {
   font-family: 'Roboto', 'Noto Sans JP', sans-serif;
   font-size: 1.6rem;
@@ -71,7 +55,6 @@ body {
   @include respond(phone) {
     font-size: 1.2rem;
   }
-
   box-sizing: border-box;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -81,15 +64,44 @@ body {
     body {
       padding: 0; } }
 
+a,
+a:hover {
+  transition: .3s all;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto; 
   @media only screen and (max-width: 56.25em) {
     .wrapper {
       width: 75%; } }
   @media only screen and (max-width: 37.5em) {
     .wrapper {
       width: 70%; } }
+ }     
+
+.section {
+  margin: 5rem 0;
+  &__title {
+    text-align: center;
+  }
+  &__heading {
+    display: inline-block;
+    font-size: 3rem;
+    border-bottom: 4px solid $green;
+  }
+}
+.paragraph {
+  font-weight: 300;
+  color: $grey;
+}
+.green {
+  color: $green;
+}
+.grey {
+  color: $grey;
+}
 
 ::selection {
   background-color: #7ed56f;

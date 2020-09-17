@@ -1,0 +1,21 @@
+.button {
+	display: inline-block;
+	color: $white;
+	padding: 1rem 2.5rem;
+	&__green {
+		background-color: $green;
+		&:hover {
+			color: $white;
+			background-color: $green-dark;
+		}
+	}
+	&__text {
+		padding: 0; 
+		// align: left;
+		color: $green;
+		&:hover {
+			color: $green-dark;
+		}
+	}
+}
+

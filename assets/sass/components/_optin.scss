@@ -1,0 +1,28 @@
+.optin {
+	margin-bottom: 0;
+	color: $white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 30rem;
+	display: flex;
+	align-items: center;
+	&__title {
+		font-size: 2.8rem;
+		margin-bottom: 1.5rem;
+	}
+	&__control {
+		padding: 2rem 1rem;
+		margin-right: 1.5rem;
+		font-size: 1.4rem;
+		border-radius: none !important;
+		border: 1px solid $grey;
+		border-radius: 0;
+		transition: .5s all;
+		&:focus {
+			outline: none;
+			border: 1px solid $green;
+			box-shadow: none;
+		}
+	}
+}

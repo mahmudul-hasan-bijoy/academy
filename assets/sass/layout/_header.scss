@@ -3,40 +3,37 @@
 	background-color: rgba(0,0,0,.02);
 	&__items {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
+		align-items: center;
 	}
-
 	&__left {
-		// display: flex;
+		text-align: left;
+		@include respond (mini-tab) {
+			display: none;
+		}
 	}
-
 	&__right {
-		// display: flex;
+		margin-left: auto;
 	}
-
 	&__link {
 		color: $green;
 		&:hover {
 			color: $green-dark;
 		}
 		&:not(:last-child) {
-			margin-right: 4rem;
+			margin-right: 1rem;
 		}
 	}
-
 	&__block {
 		color: $white;
-		padding: 1.2rem 2.5rem;
+		padding: 1.2rem 2rem;
 		background-color: $green;
 		&:hover {
 			color: $white;
 			background-color: $green-dark;
 		}
 	}
-
 	&__icon {
 		margin-right: .5rem;
 	}
-
 }

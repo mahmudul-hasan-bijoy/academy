@@ -17,8 +17,16 @@ ORDER: Base + Typography > Layout + Grid > Page Layout > Components;
 1em = 16px;
 */
 @mixin respond($breakpoint) {
+	@if $breakpoint == mini-phone {
+		@media only screen and (max-width: 23.625em) { @content };	//378px
+	}
+
 	@if $breakpoint == phone {
 		@media only screen and (max-width: 37.5em) { @content };	//600px
+	}
+
+	@if $breakpoint == mini-tab {
+		@media only screen and (max-width: 48em) { @content };	//768px
 	}
 
 	@if $breakpoint == tab-port {

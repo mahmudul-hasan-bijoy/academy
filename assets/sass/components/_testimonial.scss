@@ -1,0 +1,16 @@
+.testimonial {
+	&__header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	&__img {
+		width: 5rem !important;
+		height: 5rem !important;
+		border-radius: 50%;
+		margin-right: 1.5rem;
+	}
+	&__designation {
+		display:block;
+	}
+}

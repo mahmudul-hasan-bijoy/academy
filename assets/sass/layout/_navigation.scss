@@ -1,17 +1,25 @@
 .nav {
+	position: sticky;
+	z-index: 999999999;
 	padding: 2rem 0;
+	@include respond (mini-phone) {
+		flex-direction: column;
+		gap: 2rem;
+	}
 	&__logo {
 
 	}
 	&__menu {
-
+		@include respond (mini-tab) {
+			display: none;
+		}
 	}
 	&__items {
 
 	}
 	&__list {
 		&:not(:first-child) {
-			margin-left: 2rem;
+			margin-left: 1.5rem;
 		}
 		& .dropdown-toggle::after {
 			display: none;
@@ -36,9 +44,8 @@
 		}
 	}
 	&__links {
-		font-family: Noto;
-		font-size: 1.8rem;
-		letter-spacing: 1.5px;
+		font-family: Roboto;
+		font-size: 1.6rem;
 		color: $black;
 		&:hover,
 		&:hover .fas {
@@ -59,4 +66,71 @@
 			background-color: $green-dark;
 		}
 	}
+	&__bar {
+		padding: .8rem 1.2rem;
+		display: none;
+		cursor: pointer;
+		@include respond (mini-tab) {
+			display: inline-block;
+		}
+	}
+	&__overlay {
+		position: relative;
+		width: 0;
+		height: 100%;
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		right: 0;
+		overflow-x: hidden;
+		display: flex;
+		// flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: $green-dark;
+		transition: .5s all;
+		&-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		&-links {			
+			font-size: 2rem;
+			@include respond (phone) {
+				font-size: 1.4rem;
+			}
+			font-family: Roboto;
+			letter-spacing: 1.5px;
+			color: $white;
+			padding: 1.5rem 0;
+			transition: .3s all;
+			&:hover {
+				text-decoration: underline;
+				color: $white;
+			}
+		}
+	}
+	&__close {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		color: $white;
+		font-size: 3rem;
+		transition: .3s all;
+		&:hover {
+			transform: rotate(180deg);
+			color: $white;
+		}
+	}
+}
+
+//sticky navbar
+.sticky {
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+	top: 0;
+	background-color: $white;
+	box-shadow: 0 1rem .5rem -1rem rgba(0,0,0,.75);
 }

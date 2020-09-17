@@ -1,0 +1,16 @@
+.overlay {
+	margin-top: 10rem;
+	padding: 5rem 0;
+	background-position: top;
+	background-size: cover;
+	&__icon {
+		font-size: 5rem;
+		color: $green;
+	}
+	&__title {
+		font-size: 2rem;
+		color: $green;
+	}
+	
+
+}
