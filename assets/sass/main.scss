@@ -8,16 +8,19 @@
 @import "components/hero";
 @import "components/works";
 @import "components/button";
-@import "components/grid";
 @import "components/courses";
 @import "components/about";
 @import "components/testimonial";
 @import "components/overlay";
 @import "components/news";
 @import "components/optin";
+@import "components/teachers";
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
+@import "layout/grid";
+@import "layout/banner";
+@import "layout/pagination";
 
 @import "pages/home";

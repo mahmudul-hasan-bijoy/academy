@@ -1,0 +1,18 @@
+.teachers {
+	&__column {
+		padding: 5rem 4rem 2rem 4rem;
+		@include respond (mini-tab) {
+			padding: 5rem 1rem 2rem 1rem;
+		}
+	}
+	&__img	{
+		width: 8rem;
+		height: 8rem;
+		border-radius: 100px !important;
+		position: absolute;
+		top: -5rem;
+		img {
+			border-radius: 10rem;
+		}
+	}
+}

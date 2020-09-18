@@ -82,7 +82,7 @@ a:hover {
  }     
 
 .section {
-  margin: 5rem 0;
+  margin: 3rem 0 5rem 0;
   &__title {
     text-align: center;
   }
@@ -94,6 +94,7 @@ a:hover {
 }
 .paragraph {
   font-weight: 300;
+  line-height: 3rem;
   color: $grey;
 }
 .green {
@@ -101,6 +102,9 @@ a:hover {
 }
 .grey {
   color: $grey;
+}
+.current {
+  color: $green !important;
 }
 
 ::selection {

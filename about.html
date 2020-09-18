@@ -1,0 +1,446 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+     <!-- Display webpage in edge mode/IE in highest supported document mode -->
+    <meta http-equiv="x-ua-compitable" content="ie=edge, chrome 1">
+    <title>Academy | University</title>
+    <meta name="description" content="">
+    <!-- Optimizations for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <!-- VENDOR CSS FILES -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+      <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+          <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
+          <![endif]-->
+  </head>
+    <body>
+      <!--===========================
+          TOP HEADER
+      ============================-->
+      <header class="header">
+        <div class="container">
+          <div class="header__items">
+            
+            <div class="header__left">
+
+                <a href="#" class="header__link">
+                  <span class="header__icon"><i class="far fa-question-circle"></i></span>
+                  Have a questions?
+                </a>
+            
+                <a href="#" class="header__link">
+                  <span class="header__icon"><i class="fas fa-phone-alt"></i></span>
+                  10 20 123 456
+                </a>
+
+                <a href="#" class="header__link">
+                  <span class="header__icon"><i class="far fa-envelope"></i></span>
+                  info@mydomain.com
+                </a>
+
+            </div> <!-- header__left -->
+            <div class="header__right">
+
+                <a href="#" class="header__link">
+                  <span class="header__icon"><i class="fas fa-unlock"></i></span>
+                  Login
+                </a>
+
+                <a href="#" class="header__link header__block">
+                  <span class="header__icon"><i class="far fa-user"></i></span>
+                  Register
+                </a>
+
+            </div> <!-- header__right -->
+
+          </div>
+
+        </div>
+      </header>
+
+      <!--===========================
+          LOGO & NAVIGATION
+      ============================-->
+      <nav class="nav navbar">
+        <div class="container">
+          <div class="nav__logo">
+            <a data-scroll href="index.html" class="nav__links">
+              <img src="assets/img/logo.jpg" alt="Header Logo" class="img-fluid">
+            </a>
+          </div> <!-- nav__logo -->
+
+          <div class="nav__menu">
+            <ul class="nav__items d-flex">
+              <li class="nav__list"><a href="index.html" class="nav__links">Home</a></li>
+              <li class="nav__list dropdown">
+                <a class="nav__links dropdown-toggle current" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  About Us <span><i class="fas fa-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="about.html">Our School</a>
+                  <a class="dropdown-item" data-scroll href="#teachers">Our Teachers</a>
+                </ul>
+              </li>
+              <li class="nav__list"><a href="admissions.html" class="nav__links">Admissions</a></li>
+              <li class="nav__list"><a href="courses.html" class="nav__links">Courses</a></li>
+              <li class="nav__list"><a href="contact.html" class="nav__links">Contact</a></li>
+            </ul>
+          </div> <!-- nav__menu -->
+
+          <div class="nav__id">
+            <a href="#" class="nav__block"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="nav__block"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="nav__block"><i class="fab fa-linkedin-in"></i></a>
+
+            <!-- mobile navigation -->
+              <span class="nav__block nav__bar" onclick="openNav()"><i class="fas fa-bars"></i></span>
+              <div id="myNav" class="nav__overlay">
+                <a href="javascript:void(0)" onclick="closeNav()" class="nav__close">&times;</a>
+                <div class="nav__overlay-content">
+                  <a href="index.html" onclick="closeNav()" class="nav__overlay-links">Home</a>
+                  <li class="nav__list dropdown">
+                    <a class="nav__overlay-links dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us <span><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" onclick="closeNav()" href="about.html">Our Academy</a>
+                      <a class="dropdown-item" onclick="closeNav()" href="about.html">Our Teachers</a>
+                    </ul>
+                  </li>
+                  <a href="admissions.html" onclick="closeNav()" class="nav__overlay-links">Admissions</a>
+                  <a href="courses.html" onclick="closeNav()" class="nav__overlay-links">Courses</a>
+                  <a href="contact.html" onclick="closeNav()" class="nav__overlay-links">Contact</a>
+                </div>
+              </div> <!-- nav__overlay -->
+
+          </div> <!-- nav__id -->
+          
+        </div>
+      </nav>
+      
+      <!--===========================
+          PAGE BANNER
+      ============================-->
+      <section class="section banner" style="background-image: linear-gradient(to right, rgba(15,73,128,.5),rgba(15,73,128,.5)), url(assets/img/banner.jpg)">
+        <div class="container">
+          <h2 class="banner__title text-left">About Us</h2>
+          <p class="paragraph text-white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        </div>
+      </section>
+
+      <!--===========================
+          PAGINATION
+      ============================-->
+      <section class="pagination">
+        <div class="container">
+          <a href="#" class="pagination__title">Home</a>
+          <span class="pagination__arrow">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          <span class="current">About Us</span>
+        </div>
+      </section>
+
+      <!--===========================
+          HISTORY
+      ============================-->
+      <section class="section history mt-md">
+        <div class="container">
+          <div class="grid-text-3">
+             
+            <div class="section__title mb-md">
+              <h3 class="section__heading">Academic History</h3>
+            </div>
+
+            <div class="history__column">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, iure dolorum! Nam veniam tempore tenetur aliquam architecto, hic alias quia quisquam, obcaecati laborum dolores. Ex libero cumque veritatis numquam placeat?
+              </p>
+            </div>
+
+            <div class="history__column">
+              <p class="paragraph">
+                Nam veniam tempore tenetur aliquam architecto, hic alias quia quisquam, obcaecati laborum dolores. Ex libero cumque veritatis numquam placeat?
+              </p>
+            </div>
+
+          </div> <!-- grid-3 -->
+        </div>
+      </section>
+
+      <!--===========================
+          2-COLUMN-2-ROW
+      ============================-->
+      <section class="section about-us mt-big">
+        <div class="container">
+
+          <div class="grid-2 align-items-center">
+            <div class="about-us__column">
+              <img src="assets/img/course_4.jpg" alt="Why-1" class="img-fluid">
+            </div>
+            <div class="about-us__column">
+              <div class="section__title mb-md  text-left">
+                <h3 class="section__heading">Why Academics Works</h3>
+              </div>
+              <p class="paragraph mb-md">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque dolore libero corrupti! Itaque, delectus?
+              </p>
+              <p class="paragraph">
+                Modi sit dolor repellat esse! Sed necessitatibus itaque libero odit placeat nesciunt, voluptatum totam facere.
+              </p>
+            </div>
+          </div> <!-- grid-2 -->
+
+          <div class="grid-2 align-items-center mt-md">
+            <div class="about-us__column">
+              <div class="section__title mb-md text-left">
+                <h3 class="section__heading">Personalized Learning</h3>
+              </div>
+              <p class="paragraph mb-md">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque dolore libero corrupti! Itaque, delectus?
+              </p>
+              <p class="paragraph">
+                Modi sit dolor repellat esse! Sed necessitatibus itaque libero odit placeat nesciunt, voluptatum totam facere.
+              </p>
+            </div>
+            <div class="about-us__column">
+              <img src="assets/img/course_5.jpg" alt="Why-2" class="img-fluid">
+            </div>
+          </div> <!-- grid-2 -->
+
+        </div>
+      </section>
+
+      <!--===========================
+          BLUE OVERLAY COLUMN
+      ============================-->
+      <section class="section overlay" style="background-image: linear-gradient(to right, rgba(0,0,0,.8),rgba(0,0,0,.8)), url(assets/img/hero_1.jpg)">
+        <div class="container">
+          <div class="grid-text">
+            
+            <div class="overlay__column">
+                <i class="overlay__icon fas fa-graduation-cap pb-sm"></i>
+                <h3 class="overlay__title">Our Philosophy</h3>
+                <p class="paragraph mt-md text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque id quia ipsam eos provident nostrum nulla exercitationem voluptas. Veniam?
+                </p>
+            </div>
+
+            <div class="overlay__column">
+                <i class="overlay__icon fas fa-pencil-ruler pb-sm"></i>
+                <h3 class="overlay__title">Academics Principle</h3>
+                <p class="paragraph mt-md text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque id quia ipsam eos provident nostrum nulla exercitationem voluptas. Veniam?
+                </p>
+            </div>
+
+            <div class="overlay__column">
+                <i class="overlay__icon fas fa-university pb-sm"></i>
+                <h3 class="overlay__title">Key of Success</h3>
+                <p class="paragraph mt-md text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, neque id quia ipsam eos provident nostrum nulla exercitationem voluptas. Veniam?
+                </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--===========================
+          TEACHERS
+      ============================-->
+      <section class="section teachers" id="teachers">
+        <div class="container">
+          <div class="section__title mt-big mb-big">
+            <h3 class="section__heading">Our Teachers</h3>
+          </div>
+          <div class="grid-3">
+            
+            <div class="teachers__column works__column">
+              <div class="teachers__img mb-md">
+                <img src="assets/img/person_1.jpg" alt="teacher-1" class="img-fluid">
+              </div>
+              <div class="works__content text-center">
+                <h3 class="works__title mb-sm">Craig Daniel</h3>
+                <small class="teachers__designation grey">Math Teacher</small>
+                <p class="works__para grey mt-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit
+                </p>
+              </div>
+            </div> <!-- works__column -->
+
+            <div class="teachers__column works__column">
+              <div class="teachers__img mb-md">
+                <img src="assets/img/person_2.jpg" alt="teacher-2" class="img-fluid">
+              </div>
+              <div class="works__content text-center">
+                <h3 class="works__title mb-sm">Taylor Simpson</h3>
+                <small class="teachers__designation grey">Math Teacher</small>
+                <p class="works__para grey mt-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit
+                </p>
+              </div>
+            </div> <!-- works__column -->
+
+            <div class="teachers__column works__column">
+              <div class="teachers__img mb-md">
+                <img src="assets/img/person_3.jpg" alt="teacher-3" class="img-fluid">
+              </div>
+              <div class="works__content text-center">
+                <h3 class="works__title mb-sm">Jonas Tabble</h3>
+                <small class="teachers__designation grey">Math Teacher</small>
+                <p class="works__para grey mt-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit
+                </p>
+              </div>
+            </div> <!-- works__column -->
+
+            <div class="teachers__column works__column">
+              <div class="teachers__img mb-md">
+                <img src="assets/img/person_3.jpg" alt="teacher-4" class="img-fluid">
+              </div>
+              <div class="works__content text-center">
+                <h3 class="works__title mb-sm">Craig Daniel</h3>
+                <small class="teachers__designation grey">Math Teacher</small>
+                <p class="works__para grey mt-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit
+                </p>
+              </div>
+            </div> <!-- works__column -->
+
+            <div class="teachers__column works__column">
+              <div class="teachers__img mb-md">
+                <img src="assets/img/person_2.jpg" alt="teacher-5" class="img-fluid">
+              </div>
+              <div class="works__content text-center">
+                <h3 class="works__title mb-sm">Taylor Simpson</h3>
+                <small class="teachers__designation grey">Math Teacher</small>
+                <p class="works__para grey mt-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit
+                </p>
+              </div>
+            </div> <!-- works__column -->
+
+            <div class="teachers__column works__column">
+              <div class="teachers__img mb-md">
+                <img src="assets/img/person_1.jpg" alt="teacher-6" class="img-fluid">
+              </div>
+              <div class="works__content text-center">
+                <h3 class="works__title mb-sm">Jonas Tabble</h3>
+                <small class="teachers__designation grey">Math Teacher</small>
+                <p class="works__para grey mt-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit
+                </p>
+              </div>
+            </div> <!-- works__column -->
+
+          </div> <!-- grid-3 -->
+        </div>
+      </section>
+
+      <!--===========================
+          OPT IN FORM
+      ============================-->
+      <section class="section optin" style="background-image: linear-gradient(to right, rgba(0,0,51,0.8),rgba(0,0,51,0.8)), url(assets/img/bg_1.jpg)">
+        <div class="container">
+          <div class="grid-2 align-items-center justify-content-between">
+  
+            <div class="optin__desc">
+              <h2 class="optin__title">Subscribe to us!</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
+            <div class="optin__form">
+              <form class="d-flex align-items-center">
+                  <input type="text" class="optin__control form-control" placeholder="Enter your email">
+                <a href="#" class="button button__green">Send</a>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--===========================
+          FOOTER
+      ============================-->
+      <footer class="footer">
+        <div class="container">
+          <div class="grid-4">
+            
+            <div class="footer__column">
+              <img src="assets/img/logo.png" alt="footer logo" class="footer__logo img-fluid mb-md">
+              <p class="paragraph text-white mb-sm">
+                Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Facere quis, cumque ut repudiandae autem porro.
+              </p>
+              <a href="#" class="button button__text">Learn More</a>
+            </div> <!-- footer__column -->
+
+            <div class="footer__column">
+              <h4 class="footer__title mb-md">Our campus</h4>
+              <li class="footer__lists"><a class="footer__links">Academic</a></li>
+              <li class="footer__lists"><a class="footer__links">News</a></li>
+              <li class="footer__lists"><a class="footer__links">Our Interns</a></li>
+              <li class="footer__lists"><a class="footer__links">Our Leaderships</a></li>
+              <li class="footer__lists"><a class="footer__links">Careers</a></li>
+              <li class="footer__lists"><a class="footer__links">Human Resources</a></li>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__title mb-md">Our courses</h4>
+              <li class="footer__lists"><a class="footer__links">Math</a></li>
+              <li class="footer__lists"><a class="footer__links">Science & Engineering</a></li>
+              <li class="footer__lists"><a class="footer__links">Arts & Humanities</a></li>
+              <li class="footer__lists"><a class="footer__links">Economics & Finance</a></li>
+              <li class="footer__lists"><a class="footer__links">Business</a></li>
+              <li class="footer__lists"><a class="footer__links">Computer</a></li>
+            </div> <!-- footer__column -->
+
+            <div class="footer__column">
+              <h4 class="footer__title mb-md">Contact</h4>
+              <li class="footer__lists"><a class="footer__links">Help Center</a></li>
+              <li class="footer__lists"><a class="footer__links">Support</a></li>
+              <li class="footer__lists"><a class="footer__links">Community</a></li>
+              <li class="footer__lists"><a class="footer__links">Press</a></li>
+              <li class="footer__lists"><a class="footer__links">Share</a></li>
+            </div> <!-- footer__column -->
+
+          </div> <!-- grid-4 -->
+          <div class="footer__copyright text-center mt-big">
+            <p class="text-white">Made By <a href="#" class="footer__author">Mahmudul Hasan Bijoy</a></p>
+            <p class="text-white">Design collected from <a href="#" class="footer__designer">Colorib</a></p>
+          </div>
+        </div>
+      </footer>
+
+     <!-- jQuery & Custom javaScript -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/modernizr-3.8.0.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>  
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/smooth-scroll.min.js"></script>
+      <script src="assets/js/jquery.magnific-popup.min.js"></script>
+      <script src="assets/js/main.js"></script>
+    
+    </body>
+</html>
+
+
