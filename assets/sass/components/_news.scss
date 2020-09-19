@@ -2,6 +2,9 @@
 	&__column {
 		&.middle {
 			margin-top: 8rem;
+			@include respond (mini-tab) {
+				margin-top: 2rem;
+			}
 		}
 	}
 	&__heading {

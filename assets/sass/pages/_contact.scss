@@ -1,0 +1,73 @@
+.get-in-touch {
+  max-width: 800px;
+  margin: 5rem auto;
+  position: relative;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    padding-bottom: 5rem;
+    color: $black;
+    background: linear-gradient(to right,$green  50%,$green-dark  50%) !important;
+    background-clip: text !important;
+    color: transparent !important;
+  }
+}
+
+.contact-form {
+  &__form-field {
+      position: relative;
+      margin: 3rem 0;
+  }
+  &__input-text {
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    border-width: 0 0 2px 0;
+    border-color: $green-dark;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    &:focus {
+      outline: none;
+    }
+    &:focus + .label,
+    &.not-empty + .label {
+      -webkit-transform: translateY(-2.4rem);
+      transform: translateY(-2.4rem);
+    }
+  }
+  &__label {
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    color: $green;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, 
+    -webkit-transform .2s ease-in-out;
+  }
+  &__submit-btn {
+    display: inline-block;
+    background-color: #000;
+    background-image: linear-gradient(125deg,$green,$green-dark);
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    padding: .8rem 1.6rem;
+    border: none;
+    width:20rem;
+    cursor: pointer;
+    transition: .3s all;
+    &:hover {
+      background-image: linear-gradient(125deg,$green-dark,$green);
+    }
+  }
+}
