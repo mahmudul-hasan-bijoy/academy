@@ -17,5 +17,31 @@
 			color: $green-dark;
 		}
 	}
+	&__login {
+		font-size: 1.4rem;
+		padding: .3rem 1rem;
+		background-color: $white;
+		color: $green;
+		border: none;
+		transition: .3s all;
+		&:focus,
+		&:active {
+			outline: 1px solid $white;
+			outline-offset: .3rem;
+		}
+	}
+	&__submit {
+		font-size: 1.4rem;
+		padding: 1rem 1.5rem;
+		background-color: $white;
+		color: $green;
+		border: none;
+		transition: .3s all;
+		&:focus,
+		&:active {
+			outline: 1px solid $white;
+			outline-offset: .3rem;
+		}
+	}
 }
 
